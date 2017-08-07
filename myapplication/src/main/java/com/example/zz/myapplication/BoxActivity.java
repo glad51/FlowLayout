@@ -28,7 +28,6 @@ public class BoxActivity extends AppCompatActivity {
     Button mBtnClick;
     private Context mContext;
     private ArrayList<String> mArray;
-    private int line;
 
 
     @Override
@@ -45,6 +44,7 @@ public class BoxActivity extends AppCompatActivity {
         ViewGroup vTv = null;
         int sum = 0;
         int screenWidth = getWidth() - 60;
+        int line=0;
 //        if (line>=4){
 //            mArray.add(0,name);
 //        }else {
