@@ -28,6 +28,7 @@ public class BoxActivity extends AppCompatActivity {
     Button mBtnClick;
     private Context mContext;
     private ArrayList<String> mArray;
+    private int line;
 
 
     @Override
@@ -43,11 +44,14 @@ public class BoxActivity extends AppCompatActivity {
     private void getFlexbox(String name) {
         ViewGroup vTv = null;
         int sum = 0;
-        int line = 0;
         int screenWidth = getWidth() - 60;
-        mArray.add(name);
+//        if (line>=4){
+//            mArray.add(0,name);
+//        }else {
+            mArray.add(name);
+//        }
         for (int i = 0; i < mArray.size(); i++) {
-            if (vTv!=null){
+            if (vTv != null) {
                 mFlexbox.removeView(vTv);
             }
             vTv = (ViewGroup) getLayoutInflater().inflate(R.layout.item_flexbox, mFlexbox, false);
